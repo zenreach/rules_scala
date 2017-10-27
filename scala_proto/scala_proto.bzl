@@ -454,6 +454,7 @@ Outputs:
 def scalapb_proto_library(
         name,
         deps = [],
+        exports = [],
         with_grpc = False,
         with_java = False,
         with_flat_package = False,
@@ -476,6 +477,6 @@ def scalapb_proto_library(
     scala_library(
         name = name,
         deps = [srcjar] + external_deps,
-        exports = external_deps,
+        exports = external_deps + exports,
         visibility = visibility,
     )
