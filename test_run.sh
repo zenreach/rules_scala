@@ -621,5 +621,4 @@ $runner test_scala_library_expect_failure_on_missing_direct_java
 $runner bazel run test:test_scala_proto_server
 $runner test_scala_library_expect_failure_on_missing_direct_deps_warn_mode_java
 $runner test_scala_library_expect_better_failure_message_on_missing_transitive_dependency_labels_from_other_jvm_rules
-$runner test_intellij_aspect ac2bb7 # TODO(https://github.com/bazelbuild/intellij/issues/146): replace with release tag when fixed.
-$runner test_intellij_aspect master
+$runner test_intellij_aspect master # TODO(https://github.com/bazelbuild/intellij/issues/146): add test of release tag when fixed.
