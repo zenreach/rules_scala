@@ -22,8 +22,8 @@ def scala_proto_repositories():
 
   native.maven_jar(
       name = "scala_proto_rules_protoc_jar",
-      artifact = "com.github.os72:protoc-jar:3.2.0",
-      sha1 = "7c06b12068193bd2080caf45580b0a00d2a31638",
+      artifact = "com.github.os72:protoc-jar:3.4.0.1",
+      sha1 = "915daf07e94afd97de523e9973eaff92200e4dc4",
       server = "scala_proto_deps_maven_server",
   )
 
